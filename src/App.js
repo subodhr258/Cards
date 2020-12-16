@@ -7,9 +7,9 @@ import data from './robots.json';
 const App = () => {
     return (
         <div class="container">
-        <h1>RoboFriends</h1>
-        <SearchBox />
-        <CardList robots={data.robots}/>
+            <h1>RoboFriends</h1>
+            <SearchBox />
+            <CardList robots={data.robots} />
         </div>
     )
 }
