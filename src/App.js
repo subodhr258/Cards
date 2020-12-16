@@ -1,6 +1,6 @@
 import React from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
+import CardList from './Components/CardList';
+import SearchBox from './Components/SearchBox';
 import data from './robots.json';
 
 
