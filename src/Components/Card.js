@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const Quantity = (props) => {
-  let { name, email, id, price } = props;
+const Quantity = () => {
   const [qty, setQty] = useState(0);
   const decreaseQty = () => {
     if (qty > 0) setQty(qty - 1);
@@ -22,7 +21,11 @@ const Quantity = (props) => {
     </div>
   );
 };
+
 const Card = ({ name, email, id, price }) => {
+  const addToCart = (name) => {
+    alert(name + " added to cart");
+  };
   return (
     <div class="container col">
       <div class="card shadow p-3 mb-5 bg-white rounded">
@@ -31,7 +34,11 @@ const Card = ({ name, email, id, price }) => {
           <h2>{name}</h2>
           <p>{email}</p>
           <div class="row container justify-content-around">
-            <button type="button" class="btn btn-primary">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onClick={() => addToCart(name)}
+            >
               Add to Cart
               <span class="m-2">
                 <svg
