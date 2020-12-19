@@ -2,6 +2,7 @@ import React from 'react';
 import CardList from './Components/CardList';
 import SearchBox from './Components/SearchBox';
 import data from './robots.json';
+import "./App.css";
 
 
 const App = () => {
